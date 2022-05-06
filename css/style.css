@@ -110,6 +110,10 @@ div.bg-SBL {
 /* #endregion */
 
 /* #region Home - main section */
+section.main-page {
+	height: 93vh;
+}
+
 section.main-page video {
 	background-color: #fff;
 	border-radius: 30px;
@@ -371,7 +375,14 @@ footer p.made {
 
 
 /*? Responsive */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 900px) {
+	section.fullpage.main-page {
+		height: fit-content;
+		padding: 10vw 10px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
 	header h1 {
 		display: none;
 	}
