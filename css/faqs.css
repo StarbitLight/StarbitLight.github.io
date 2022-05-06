@@ -1,0 +1,105 @@
+section.faqs {
+	min-height: 60vh;
+	justify-content: start;
+}
+
+.container {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+
+.filtered {
+	background: #222;
+	overflow: hidden;
+	border-radius: 25px;
+	text-align: center;
+	line-height: 25px;
+	padding: 25px;
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+#filters {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	margin-top: 25px;
+	border-bottom: rgba(255, 255, 255, 0.5) solid 2px;
+	padding-bottom: 25px;
+	flex-wrap: wrap;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	padding: 15px 25px;
+	border-radius: 50px;
+	cursor: pointer;
+	background-color: var(--SBL-Pink);
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	text-shadow: rgba(0, 0, 0, 0.5) 0 1px 3px;
+}
+
+.btn.active {
+	background-color: var(--SBL-Purple);
+}
+
+.collapsible {
+	margin-top: 25px;
+	background-color: var(--SBL-Purple);
+	color: white;
+	cursor: pointer;
+	padding: 15px 30px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 18px;
+	border-radius: 50px;
+	transition: border-radius 0.25s, background-color 0.25s;
+
+	box-shadow: rgba(0, 0, 0, 0) 0 0 0;
+}
+
+button.collapsible.active, button.collapsible:hover {
+	background-color: var(--SBL-Pink);
+}
+
+button.collapsible.active {
+	border-radius: 25px 25px 0 0;
+}
+
+button.collapsible::after {
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+button.collapsible.active::after {
+	content: "\2212";
+}
+
+.content {
+	padding: 0 25px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.25s ease;
+	background-color: rgba(0, 0, 0, 0.15);
+	border-radius: 0 0 25px 25px;
+	text-align: left;
+	width: 100%;
+}
+
+.content p {
+	padding: 10px 0;
+}

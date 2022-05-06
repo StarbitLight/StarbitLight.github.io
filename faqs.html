@@ -17,9 +17,11 @@
 
 	<meta property="twitter:url" content="https://starbitlight.com">
 	<meta property="twitter:title" content="Starbit Light 🌠 FAQs">
-	<meta property="twitter:description" content="All the frequently asked questions concerning Starbit Light and the games">
+	<meta property="twitter:description"
+		content="All the frequently asked questions concerning Starbit Light and the games">
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/faqs.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -49,10 +51,138 @@
 	</header>
 	<div class="space" style="height: 70px;"></div>
 
-	<section class="fullpage main-page" style="height: 93vh;">
-		<!-- <div class="bg-SBL"></div> -->
-		<h3 data-aos="zoom-in" data-aos-delay="500">Oops- This page is not ready yet...</h3>
-		<p style="text-align: center;" data-aos="zoom-in"  data-aos-delay="1500">Please come back later!</p>
+	<section style="padding: 50px 0;">
+		<div class="bg-SBL"></div>
+		<h3>FAQs</h3>
+	</section>
+
+	<section class="faqs">
+		<div class="centered-content">
+			<div id="filters">
+				<button class="btn active" onclick="filterSelection('all')">Show all</button>
+				<!-- <button class="btn" onclick="filterSelection('account')">Starbit Light Account</button> -->
+				<button class="btn" onclick="filterSelection('bug')">Bug</button>
+				<button class="btn" onclick="filterSelection('sfh')">Suicide For Him</button>
+				<button class="btn" onclick="filterSelection('extrabeat')">Extra Beat</button>
+				<button class="btn" onclick="filterSelection('yukiskitchen')">Yuki's Kitchen</button>
+			</div>
+			<div class="container">
+				<!--? GLOBAL -->
+				<button type="button" class="collapsible filtered sfh">When does the next update releases?</button>
+				<div class="content filtered sfh">
+					<p>
+						We are very sorry, but it is impossible to anwser. We are a small team working on our free time, so we can't provide you with a precise release date.
+					</p>
+					<p>
+						We encourage you to follow us to our socials to be informed of a release date, or just to get exclusive sneak peeks on the upcoming updates.
+					</p>
+				</div>
+				
+				<button type="button" class="collapsible filtered account bug sfh extrabeat yukiskitchen">I think I found a bug!</button>
+				<div class="content filtered account bug sfh extrabeat yukiskitchen">
+					<p>
+						We are very sorry you had a bug while playing our game- 😱
+					</p>
+					<p>
+						We encourage you to contact us to report the bug. The easiest way to reach us out is from our Discord server where you can open a bug report ticket and will be in touch with the developers directly. You can find our Discord server at the very bottom of this page in our socials links!
+					</p>
+				</div>
+
+				<button type="button" class="collapsible filtered extrabeat yukiskitchen">When does this game publicly releases?</button>
+				<div class="content filtered extrabeat yukiskitchen">
+					<p>
+						We are very sorry, but it is impossible to anwser. We are a small team working on our free time, so we can't provide you with a precise release date.
+					</p>
+					<p>
+						We encourage you to follow us to our socials to be informed of a release date, or just to get exclusive sneak peeks of this game.
+					</p>
+				</div>
+
+				<button type="button" class="collapsible filtered extrabeat yukiskitchen">Does the game contains ads?</button>
+				<div class="content filtered extrabeat yukiskitchen">
+					<p>
+						Most mobile game developers implement advertisements in their free mobile games. This is parcially the case in our game:
+					</p>
+					<p>
+						When you launch the game for the first time, you are asked if you want to enable the ads in game to support our work. They are completely optional though, and can be disabled to play without any interuption.
+					</p>
+				</div>
+
+				<!--? SUICIDE FOR HIM -->
+				<button type="button" class="collapsible filtered sfh">Where can I listen to the game's soundtrack?</button>
+				<div class="content filtered sfh">
+					<p>
+						The soundtrack is available on streaming platforms like Spotify, YouTube Music, Apple Music, Amazon Music... and much more!
+						<br>Just search "<b>Suicide For Him Soundtrack</b>" and enjoy~ ✨
+					</p>
+				</div>
+
+				<!--? EXTRA BEAT -->
+				<button type="button" class="collapsible filtered extrabeat">What kind of game Extra Beat is?</button>
+				<div class="content filtered extrabeat">
+					<p>
+						Extra Beat is a rhythm game that originally appeared as a minigame in our other game "Suicide For Him" which has been ported and optimized for mobile as a full game for free!
+					</p>
+				</div>
+
+				<button type="button" class="collapsible filtered extrabeat">How can I unlock new beatmap packs?</button>
+				<div class="content filtered extrabeat">
+					<p>
+						To unlock more beatmap packs, you have to earn Extra Coins by playing the beatmaps you already have unlocked.
+					</p>
+					<p>
+						<i>Tip: You get more Extra Coins if you don't miss any arrow note when playing!</i>
+					</p>
+				</div>
+
+				<button type="button" class="collapsible filtered extrabeat">Will the game have beatmaps from artists other than Raphael Neko?</button>
+				<div class="content filtered extrabeat">
+					<p>
+						It is currently too early to answer that question. We currently avoid adding beatmaps from any other artists than Raphael Neko and the soundtrack of our other games to avoid any copyright issue.
+					</p>
+				</div>
+
+				<!--? YUKI'S KITCHEN -->
+				<button type="button" class="collapsible filtered yukiskitchen">What kind of game Yuki's Kitchen is?</button>
+				<div class="content filtered yukiskitchen">
+					<p>
+						Yuki's Kitchen is a fun cooking simulation game in form of small quick minigames where you can cook as many recipes as you want!
+					</p>
+					<p>
+						The game will be free on mobile and will receive some updates to add even more fun and challenging recipes to the game over the time.
+					</p>
+				</div>
+
+				<button type="button" class="collapsible filtered yukiskitchen">How to increase the in-game stats?</button>
+				<div class="content filtered yukiskitchen">
+					<p>
+						Your game's statistics changes depending on the way you play! Here's a guide to get the best stats possible:
+					</p>
+					<p>
+						<b>Knowledge:</b> increases by finishing all the recipes.
+					</p>
+					<p>
+						<b>Reaction:</b> changes depending on your reaction time on the actions to do.
+					</p>
+					<p>
+						<b>Perfect:</b> changes depending if you win or fail minigames.
+					</p>
+					<p>
+						<b>Yuki's friendship:</b> always to the top, Yuki is friend with everyone!
+					</p>
+					<p>
+						<b>Skilled chef:</b> increases by having the best scores possible in Extreme Mode.
+					</p>
+				</div>
+
+				<button type="button" class="collapsible filtered yukiskitchen">Will the game contain more game modes?</button>
+				<div class="content filtered yukiskitchen">
+					<p>
+						It is too early to answer that question, but we plan even more cool stuff with Yuki!
+					</p>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<footer>
@@ -71,12 +201,16 @@
 			</div>
 			<div class="socials">
 				<ul>
-					<li><a href="https://twitter.com/StarbitLight" target="_blank"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="https://www.youtube.com/StarbitLight" target="_blank"><i class="fab fa-youtube"></i></a></li>
-					<li><a href="https://www.tiktok.com/@starbitlight/" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+					<li><a href="https://twitter.com/StarbitLight" target="_blank"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li><a href="https://www.youtube.com/StarbitLight" target="_blank"><i
+								class="fab fa-youtube"></i></a></li>
+					<li><a href="https://www.tiktok.com/@starbitlight/" target="_blank"><i
+								class="fab fa-tiktok"></i></a></li>
 					<li><a href="https://twitch.tv/starbitlight" target="_blank"><i class="fab fa-twitch"></i></a></li>
 					<li><a href="http://bit.ly/SFH_Discord" target="_blank"><i class="fab fa-discord"></i></a></li>
-					<li><a href="https://instagram.com/StarbitLight" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://instagram.com/StarbitLight" target="_blank"><i
+								class="fab fa-instagram"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -91,6 +225,60 @@
 
 	<script>
 		AOS.init();
+
+		filterSelection("all")
+		function filterSelection(c) {
+			var x, i;
+			x = document.getElementsByClassName("filtered");
+			if (c == "all") c = "";
+			for (i = 0; i < x.length; i++) {
+				removeClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+			}
+		}
+		function addClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) element.className += " " + arr2[i];
+			}
+		}
+		function removeClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+					arr1.splice(arr1.indexOf(arr2[i]), 1);
+				}
+			}
+			element.className = arr1.join(" ");
+		}
+		var btnContainer = document.getElementById("filters");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			});
+		}
+
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
 	</script>
 </body>
 
