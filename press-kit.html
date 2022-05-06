@@ -20,6 +20,7 @@
 	<meta property="twitter:description" content="Press Kit for games made by Starbit Light">
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/presskit.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -49,10 +50,42 @@
 	</header>
 	<div class="space" style="height: 70px;"></div>
 
-	<section class="fullpage main-page" style="height: 93vh;">
-		<!-- <div class="bg-SBL"></div> -->
-		<h3 data-aos="zoom-in" data-aos-delay="500">Oops- This page is not ready yet...</h3>
-		<p style="text-align: center;" data-aos="zoom-in"  data-aos-delay="1500">Please come back later!</p>
+	<section style="padding: 50px 0;">
+		<div class="bg-SBL"></div>
+		<h3>Press Kit</h3>
+	</section>
+
+	<section class="presskit">
+		<div class="centered-content">
+			<div id="filters">
+				<button class="btn active" onclick="filterSelection('all')">Show all</button>
+				<button class="btn" onclick="filterSelection('suicideforhim')">Suicide For Him</button>
+				<button class="btn" onclick="filterSelection('extrabeat')">Extra Beat</button>
+				<button class="btn" onclick="filterSelection('yukiskitchen')">Yuki's Kitchen</button>
+			</div>
+			<div class="container">
+				<div class="filtered suicideforhim">
+					<a href="#" download="SuicideForHim_Logo" target="_blank">
+						<img src="img/placeholder.png" alt="">
+						<p>Full logo</p>
+					</a>
+				</div>
+
+				<div class="filtered extrabeat">
+					<a href="#" download="ExtraBeat_Logo" target="_blank">
+						<img src="img/placeholder.png" alt="">
+						<p>EB Logo</p>
+					</a>
+				</div>
+
+				<div class="filtered yukiskitchen">
+					<a href="#" download="YukisKitchen_Logo" target="_blank">
+						<img src="img/placeholder.png" alt="">
+						<p>YK Logo</p>
+					</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<footer>
@@ -71,12 +104,16 @@
 			</div>
 			<div class="socials">
 				<ul>
-					<li><a href="https://twitter.com/StarbitLight" target="_blank"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="https://www.youtube.com/StarbitLight" target="_blank"><i class="fab fa-youtube"></i></a></li>
-					<li><a href="https://www.tiktok.com/@starbitlight/" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+					<li><a href="https://twitter.com/StarbitLight" target="_blank"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li><a href="https://www.youtube.com/StarbitLight" target="_blank"><i
+								class="fab fa-youtube"></i></a></li>
+					<li><a href="https://www.tiktok.com/@starbitlight/" target="_blank"><i
+								class="fab fa-tiktok"></i></a></li>
 					<li><a href="https://twitch.tv/starbitlight" target="_blank"><i class="fab fa-twitch"></i></a></li>
 					<li><a href="http://bit.ly/SFH_Discord" target="_blank"><i class="fab fa-discord"></i></a></li>
-					<li><a href="https://instagram.com/StarbitLight" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://instagram.com/StarbitLight" target="_blank"><i
+								class="fab fa-instagram"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -91,6 +128,45 @@
 
 	<script>
 		AOS.init();
+
+		filterSelection("all")
+		function filterSelection(c) {
+			var x, i;
+			x = document.getElementsByClassName("filtered");
+			if (c == "all") c = "";
+			for (i = 0; i < x.length; i++) {
+				removeClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+			}
+		}
+		function addClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) element.className += " " + arr2[i];
+			}
+		}
+		function removeClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+					arr1.splice(arr1.indexOf(arr2[i]), 1);
+				}
+			}
+			element.className = arr1.join(" ");
+		}
+		var btnContainer = document.getElementById("filters");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			});
+		}
 	</script>
 </body>
 
