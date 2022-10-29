@@ -107,7 +107,15 @@ div.bg-SBL {
 	z-index: -1;
 }
 
+.full-size-banner {
+	width: 100%;
+	user-select: none;
+	-webkit-user-select: none;
+	pointer-events: none;
+}
+
 /* #endregion */
+We released our f
 
 /* #region Home - main section */
 section.main-page {
