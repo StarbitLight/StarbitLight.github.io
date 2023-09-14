@@ -36,8 +36,6 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	position: fixed;
-	top: 0;
 	left: 0;
 	right: 0;
 	font-family: 'Quicksand', sans-serif;
@@ -72,6 +70,27 @@ header a {
 
 header a:hover {
 	letter-spacing: 1.5px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+}
+
+a.warning-banner {
+	color: #fff;
+	text-decoration: none;
+	background: #bb0000;
+	display: block;
+	text-align: center;
+	/* height: 4.5rem; */
+	padding: 2rem 0;
+	-webkit-box-shadow: inset 0px -3px 20px -10px #000;
+	box-shadow: inset 0px -3px 20px -10px #000;
+}
+
+a.warning-banner i {
+	padding-right: 10px;
 }
 
 /* #endregion */

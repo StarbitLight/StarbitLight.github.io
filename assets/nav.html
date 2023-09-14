@@ -1,7 +1,10 @@
-<header>
+<a href="../messages.html#" class="warning-banner">
+	<i class="fa-solid fa-circle-exclamation fa-beat"></i>
+	Important message concerning the future of our projects!
+</a>
+<header id="navbar">
 	<a href="../index.html#">
-		<img src="../img/sbl_logo_white_small.png" alt="Starbit Light icon logo" data-aos="fade-right"
-			data-aos-duration="750">
+		<img src="../img/sbl_logo_white_small.png" alt="Starbit Light icon logo" data-aos="fade-right" data-aos-duration="750">
 		<h1 data-aos="fade-right" data-aos-duration="750">Starbit Light</h1>
 	</a>
 	<ul data-aos="fade-left" data-aos-duration="750">
@@ -10,4 +13,18 @@
 		<li><a href="../index.html#about">About us</a></li>
 	</ul>
 </header>
-<div class="space" style="height: 70px;"></div>
+
+<script>
+	window.onscroll = function () { myFunction() };
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		} else {
+			navbar.classList.remove("sticky");
+		}
+	}
+</script>

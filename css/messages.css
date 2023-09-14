@@ -1,0 +1,47 @@
+div.message-area {
+	padding: 20px;
+	margin: 50px auto;
+	background-color: #222;
+	box-shadow: #0A0A0A 0 2px 20px;
+	border-radius: 12px;
+}
+
+div.message-area p.timestamp {
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 35px;
+	font-size: 0.8rem;
+	border-bottom: solid 2px #444;
+}
+
+div.message-area p.message-author {
+	text-align: right;
+	padding-right: 7px;
+	font-size: 0.8rem;
+	opacity: .8;
+	font-style: italic;
+}
+
+div.message-area p.message-author::after {
+	content: ' @ Starbit Light Team';
+	/* text-align: right;
+	padding-right: 7px;
+	font-size: 0.8rem; */
+}
+
+div.message-area p.message-biggertext {
+	font-weight: 800;
+	font-size: 1.6rem;
+	padding: 15px 0;
+}
+
+div.message-area a {
+	color: lightpink;
+}
+
+div.message-area img {
+	display: block;
+	width: 100%;
+	border-radius: 7px;
+	margin: 35px auto 20px;
+}
