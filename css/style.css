@@ -40,6 +40,8 @@ header {
 	right: 0;
 	font-family: 'Quicksand', sans-serif;
 	z-index: 5;
+	position: fixed;
+	top: 0;
 }
 
 header img {
@@ -72,18 +74,13 @@ header a:hover {
 	letter-spacing: 1.5px;
 }
 
-.sticky {
-	position: fixed;
-	top: 0;
-}
-
+/*
 a.warning-banner {
 	color: #fff;
 	text-decoration: none;
 	background: #bb0000;
 	display: block;
 	text-align: center;
-	/* height: 4.5rem; */
 	padding: 2rem 0;
 	-webkit-box-shadow: inset 0px -3px 20px -10px #000;
 	box-shadow: inset 0px -3px 20px -10px #000;
@@ -91,7 +88,8 @@ a.warning-banner {
 
 a.warning-banner i {
 	padding-right: 10px;
-}
+} 
+*/
 
 /* #endregion */
 
@@ -136,14 +134,13 @@ div.bg-SBL {
 /* #endregion */
 
 /* #region Home - main section */
-section.main-page {
-	height: 93vh;
-}
 
-section.main-page video {
-	background-color: #fff;
-	border-radius: 30px;
-	border: #fff solid 8px;
+section.landing-video {
+	overflow: hidden;
+	object-position: center;
+	object-fit: cover;
+	height: 30vw;
+	pointer-events: none;
 }
 
 /* #endregion */
@@ -152,7 +149,7 @@ section.main-page video {
 section.sfh-ea {
 	position: relative;
 	overflow: hidden;
-	padding: 0 7.5%;
+	padding: 150px 7.5%;
 	gap: 50px;
 	text-shadow: #000 0 1px 5px;
 }
