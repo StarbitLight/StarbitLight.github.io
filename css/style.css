@@ -68,6 +68,10 @@ header a {
 	transition: letter-spacing 150ms;
 	display: flex;
 	align-items: center;
+
+	& i {
+		padding-left: 6px;
+	}
 }
 
 header a:hover {
