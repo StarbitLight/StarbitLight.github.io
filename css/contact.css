@@ -1,13 +1,13 @@
 section.contact {
 	padding: 50px 10px;
-}
 
-section.contact p {
-	padding: 50px 0;
-	text-align: center;
-}
+	& p {
+		padding: 50px 0;
+		text-align: center;
 
-section.contact p a {
-	color: var(--SBL-Pink);
-	text-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+		& a {
+			color: var(--SBL-Pink);
+			text-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+		}
+	}
 }

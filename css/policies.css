@@ -1,29 +1,29 @@
 section.policies {
 	padding-bottom: 50px;
-}
 
-section.policies h3 {
-	padding-top: 35px;
-}
+	& h3 {
+		padding-top: 35px;
+	}
 
-p {
-	padding: 10px;
-}
+	& p {
+		padding: 10px;
 
-p.num {
-	font-weight: 700;
-	font-size: 18px;
-	padding-top: 35px;
-}
+		&.num {
+			font-weight: 700;
+			font-size: 18px;
+			padding-top: 35px;
+		}
 
-p.dot {
-	padding-left: 50px;
-}
+		&.dot {
+			padding-left: 50px;
 
-p.dot::before {
-	content: "•";
-}
+			&::before {
+				content: "•";
+			}
+		}
 
-p a {
-	color: var(--SBL-Pink);
+		& a {
+			color: var(--SBL-Pink);
+		}
+	}
 }

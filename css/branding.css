@@ -27,44 +27,44 @@ p.title {
 	align-items: center;
 	padding: 25px;
 	border-radius: 25px;
-}
 
-.card.logo img {
-	width: 50%;
-}
+	& img {
+		width: 50%;
+	}
 
-.card .download-buttons {
-	display: flex;
-	gap: 25px;
-}
+	& .download-buttons {
+		display: flex;
+		gap: 25px;
+	}
 
-.card p.quicksand {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 60px;
-}
+	& p.quicksand {
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 60px;
+	}
 
-.card.font {
-	height: 175px;
-}
+	&.font {
+		height: 175px;
+	}
 
-.card a {
-	color: var(--SBL-Pink);
-}
+	& a {
+		color: var(--SBL-Pink);
+	}
 
-.card.color p:first-child {
-	font-size: 40px;
-	line-height: 60px;
-	font-weight: 700;
-}
+	&.color {
+		height: 175px;
 
-.card.color p {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 600;
-	font-size: 20px;
-}
+		& p {
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 600;
+			font-size: 20px;
 
-.card.color {
-	height: 175px;
+			&:first-child {
+				font-size: 40px;
+				line-height: 60px;
+				font-weight: 700;
+			}
+		}
+	}
 }
