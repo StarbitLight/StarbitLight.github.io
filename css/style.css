@@ -126,11 +126,69 @@ section.landing-video {
 	overflow: hidden;
 	object-position: center;
 	object-fit: cover;
-	height: 30vw;
+	height: 40vw;
 	pointer-events: none;
 }
 
 /* #endregion */
+
+/* #region Home - Games List section */
+
+section.games {
+	padding: 50px 0 0;
+}
+
+section.games h3 {
+	padding-bottom: 50px;
+	font-size: 2.5rem;
+	font-weight: 100;
+}
+
+section.games div.games-grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	gap: 25px;
+	justify-content: center;
+	align-items: center;
+}
+
+section.games div.games-grid a.game {
+	width: 200px;
+	overflow: hidden;
+	border-radius: 15px;
+	position: relative;
+}
+
+section.games div.games-grid a.game:hover img {
+	scale: 1.1;
+}
+
+section.games div.games-grid a.game img {
+	display: block;
+	width: 100%;
+	transition: scale cubic-bezier(0.23, 1, 0.320, 1) 500ms;
+}
+
+section.games div.games-grid a.game img.blurred {
+	filter: blur(5px) brightness(0.3);
+}
+
+section.games div.games-grid a.game p {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	text-align: center;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 900;
+}
 
 /* #region Home - SFH Early Access */
 section.sfh-ea {
@@ -153,7 +211,7 @@ video.bg-SFH-video {
 
 /* #region Home - about the team */
 section.about {
-	padding: 75px 20px;
+	padding: 50px 20px 75px;
 
 	& .member-list {
 		display: flex;

@@ -11,17 +11,17 @@
 	<meta name="description"
 		content="Official website of the Starbit Light team - Meet our team and discover all of our projects here!">
 	<meta name="keywords"
-		content="Starbit Light, Games, Steam, Game, Developers, Team, Suicide For Him, Yuki's Kitchen, Extra Beat, Sudoku For Him">
+		content="Starbit Light, Games, Steam, Game, Developers, Team, Suicide For Him, Yuki's Kitchen, Extra Beat, Sudoku For Him, Nightlight Secrets, Yuki's Magic Fruits, Starbit Kart">
 
 	<meta name="robots" content="all">
 
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://starbitlight.github.io/">
+	<meta property="og:url" content="https://starbitlight.com/">
 	<meta property="og:title" content="Starbit Light 🌠">
 	<meta property="og:description"
 		content="Official website of the Starbit Light team - Meet our team and discover all of our projects here!">
 
-	<meta property="twitter:url" content="https://starbitlight.github.io/">
+	<meta property="twitter:url" content="https://starbitlight.com/">
 	<meta property="twitter:title" content="Starbit Light 🌠">
 	<meta property="twitter:description"
 		content="Official website of the Starbit Light team - Meet our team and discover all of our projects here!">
@@ -34,6 +34,7 @@
 		rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="shortcut icon" href="img/sbl_logo_white_small.png" type="image/x-icon">
@@ -47,33 +48,44 @@
 
 	<section class="landing-video">
 		<video controls controlslist="nodownload nofullscreen noremoteplayback" autoplay muted loop intrinsicsize
-			disablePictureInPicture width="100%">
-			<source src="video/sbl_main_720p.mp4" type="video/mp4">
+			disablePictureInPicture width="100%" class="bg-SFH-video">
+			<source src="video/sfh_background_loop.mp4" type="video/mp4">
 			Sorry, your browser doesn't support embedded videos.
 		</video>
+		<h3 id="header-typewrite"></h3>
+	</section>
+
+	<section class="games">
+		<h3>Our games</h3>
+		<div class="games-grid">
+			<a class="game" href="/nightlight-secrets" target="_blank">
+				<img src="img/games-list/nightlight-secrets.jpg" alt="Nightlight Secrets game artwork">
+			</a>
+			<a class="game" href="/extra-beat" target="_blank">
+				<img src="img/games-list/extra-beat.jpg" alt="Extra Beat game artwork">
+			</a>
+			<a class="game" href="/yukis-kitchen" target="_blank">
+				<img class="blurred" src="img/games-list/yukis-kitchen.jpg" alt="Yuki's Kitchen game artwork">
+				<p>Coming soon...</p>
+			</a>
+			<a class="game" href="/starbit-kart" target="_blank">
+				<img class="blurred" src="img/games-list/starbit-kart.jpg" alt="Starbit Kart game artwork">
+				<p>Coming soon...</p>
+			</a>
+			<a class="game" href="/yukis-magic-fruits" target="_blank">
+				<img class="blurred" src="img/games-list/yukis-magic-fruits.jpg" alt="Yuki's Magic Fruits game artwork">
+				<p>Coming soon...</p>
+			</a>
+			<a class="game" href="/neko-the-lost-songs" target="_blank">
+				<img class="blurred" src="img/games-list/neko-tls.jpg" alt="Neko The Lost Songs game artwork">
+				<p>Coming soon...</p>
+			</a>
+		</div>
 	</section>
 
 	<section class="about" id="about">
 		<div class="centered-content">
 			<h3>Meet the Starbit Light Team</h3>
-			<!-- <div class="member-list">
-				<div class="member">
-					<img src="img/team/raphael.png" alt="Starbit Light Raphael image">
-					<p>Raphael</p>
-				</div>
-				<div class="member">
-					<img src="img/team/ruben.webp" alt="Starbit Light Ruben Rhubarb image">
-					<p>Ruben Rhubarb</p>
-				</div>
-				<div class="member">
-					<img src="img/team/geeky.jpg" alt="Starbit Light Geeky Voice Acts image">
-					<p>Geeky Voice Acts</p>
-				</div>
-				<div class="member">
-					<img src="img/team/jake.png" alt="Starbit Light Jake image">
-					<p>Jake</p>
-				</div>
-			</div> -->
 
 			<div class="centered-content"
 				style="display:flex;flex-direction:column;font-size:0; background: linear-gradient(75deg, rgba(249, 80, 124, 1) 0%, rgba(254, 152, 70, 1) 100%); overflow: hidden; border-radius: 25px; margin: 50px 0;">
@@ -86,38 +98,35 @@
 			</p> -->
 			<!-- <h3>A new way to play</h3> -->
 			<p>
-				Starbit Light is an energetic team composed of several members, founded by Raphael in 2020 with the goal of bringing joy and entertainment to players through various games developed using different game engines such as Unity and Godot.
+				Starbit Light is an energetic team composed of several members, founded by Raphael in 2020 with the goal of bringing joy and entertainment to players through various games developed using different game engines such as Godot.
 			</p>
 			<p>
 				Our team members works tirelessly on their free time while always listening to players' feedback to improve our game projects. Optimization is a top priority for Starbit Light, ensuring that each game runs smoothly and efficiently across multiple platforms.
 			</p>
 			<p>
-				Our current biggest project, "Suicide For Him", is now available in Early Access on Steam (Windows only), with more exciting updates planned in the future until the game's story is fully complete. We also hope to extend the game's compatibility to many other platforms whenever all the content is implemented.
-			</p>
-			<p>
-				Our team is passionate about creating unique experiences for players to enjoy, we have so much fun game ideas in mind, and we can't wait to share them all as soon as we are done with our current project.
+				Our team is passionate about creating unique experiences for players to enjoy, we have so much fun game ideas in mind, and we can't wait to share them all!
 			</p>
 		</div>
 	</section>
 
-	<section id="games" style="padding:100px 0;">
+	<!-- <section id="games" style="padding:100px 0;">
 		<div class="bg-SBL" style="backdrop-filter:contrast(0);"></div>
 		<div class="centered-content"
 			style="display:flex;flex-direction:column;font-size:0;overflow:hidden; border-radius:25px;gap:10px;">
 			<a href="https://discord.com/invite/KpH2Rt6" target="_blank">
 				<img src="img/gamebanners/discord.jpg" alt="Discord banner" class="full-size-banner">
 			</a>
-			<!-- <a href="extra-beat" target="_blank">
+			<a href="extra-beat" target="_blank">
 				<img src="img/gamebanners/extrabeat-new.jpg" alt="Extra Beat banner" class="full-size-banner">
-			</a> -->
-			<!-- <a href="https://store.steampowered.com/app/1062550" target="_blank">
+			</a>
+			<a href="https://store.steampowered.com/app/1062550" target="_blank">
 				<img src="img/gamebanners/suicideforhim-availablesteam.jpg"
 					alt="Suicide For Him available on Steam banner" class="full-size-banner">
-			</a> -->
+			</a>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="sfh-ea">
+	<!-- <section class="sfh-ea">
 		<video autoplay muted loop class="bg-SFH-video">
 			<source src="video/sfh_background_loop.mp4" type="video/mp4">
 		</video>
@@ -126,13 +135,11 @@
 			<img src="img/gamebanners/suicideforhim-availablesteam.jpg"
 				alt="Suicide For Him available on Steam banner" class="full-size-banner" style="display: block;">
 		</a>
-		<!-- <p>
+		<p>
 			Suicide For Him is a mysterious 3D visual novel game with a deep story with multiple endings.
 			The game is now available in Early Access on Steam (Windows only).
-		</p> -->
-		<!-- <a href="https://store.steampowered.com/app/1062550" target="_blank"><i class="fab fa-steam"></i>Get the game
-			now!</a> -->
-	</section>
+		</p>
+	</section> -->
 
 	<!-- <section class="fiverr">
 		<div class="centered-content">
@@ -167,9 +174,42 @@
 			$("#nav-load").load("assets/nav.html", function () {
 				$("#footer-load").load("assets/footer.html", function () {
 					AOS.init();
+					headerTypewrite()
 				});
 			});
 		});
+
+		function headerTypewrite() {
+			var typewriter = new Typewriter('#header-typewrite', {
+				// strings: ['We make games', 'Welcome!'],
+				autoStart: true,
+				loop: true,
+				delay: 75,
+				deleteSpeed: 25,
+			});
+			typewriter
+				.typeString('We make games')
+				.pauseFor(1500)
+				.deleteChars(5)
+				.pauseFor(250)
+				.typeString('accessible games')
+				.pauseFor(1500)
+				.deleteChars(16)
+				.pauseFor(250)
+				.typeString('optimized games')
+				.pauseFor(1500)
+				.deleteChars(15)
+				.pauseFor(250)
+				.typeString('fun games')
+				.pauseFor(1500)
+				.deleteAll()
+				.pauseFor(250)
+				.typeString('Welcome to Starbit Light!')
+				.pauseFor(2500)
+				.deleteAll()
+				.pauseFor(250)
+				.start()
+		}
 	</script>
 </body>
 
