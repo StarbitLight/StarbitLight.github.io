@@ -17,9 +17,9 @@
 
 		<link rel="shortcut icon" href="assets/img/logos/sbl_logo_white_small.png" type="image/x-icon">
 
-		<meta name="description" content="Developed by Starbit Light 🌠">
-		<meta property="og:description" content="Developed by Starbit Light 🌠">
-		<meta property="twitter:description" content="Developed by Starbit Light 🌠">
+		<meta name="description" content="A game developed by Starbit Light 🌠">
+		<meta property="og:description" content="A game developed by Starbit Light 🌠">
+		<meta property="twitter:description" content="A game developed by Starbit Light 🌠">
 
 		<meta name="keywords" content="Starbit Light, Games, Steam, Game, Developers, Team">
 
@@ -144,6 +144,8 @@
 					document.title = newPageTitle;
 					$('meta[name="og:title"]').attr("content", newPageTitle);
 					$('meta[name="twitter:title"]').attr("content", newPageTitle);
+					$('meta[name="og:url"]').attr("content", `https://starbitlight.com/${urlParam}`);
+					$('meta[name="twitter:url"]').attr("content", `https://starbitlight.com/${urlParam}`);
 					$("#name").text(json.name);
 					$("#release-state").text(json.releasestate);
 					$("#game-banner").attr("src", json.banner);

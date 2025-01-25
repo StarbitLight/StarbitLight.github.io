@@ -17,8 +17,7 @@
 	function createPostElement(img, title, intro, pinned, posturl, dateYear, dateMonth, dateDay) {
 		const root = document.createElement("a");
 		root.classList.add("post");
-		root.href = `post?${posturl}#`;
-		root.target = "_blank";
+		root.href = `post?${posturl}`;
 
 		const header = document.createElement("img");
 		header.src = img;
