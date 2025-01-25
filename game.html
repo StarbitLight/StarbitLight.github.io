@@ -11,9 +11,9 @@
 
 		<!-- <meta name="robots" content="all"> -->
 
-		<title>🎮 Game | Starbit Light 🌠</title>
-		<meta property="og:title" content="🎮 Game | Starbit Light 🌠">
-		<meta property="twitter:title" content="🎮 Game | Starbit Light 🌠">
+		<title>Starbit Light 🌠</title>
+		<meta property="og:title" content="Starbit Light 🌠">
+		<meta property="twitter:title" content="Starbit Light 🌠">
 
 		<link rel="shortcut icon" href="assets/img/logos/sbl_logo_white_small.png" type="image/x-icon">
 
@@ -140,6 +140,10 @@
 					return;
 				}
 				fetch(`games/${urlParam}.json`).then((response) => response.json()).then((json) => {
+					var newPageTitle = `${json.name} | Starbit Light 🌠`;
+					document.title = newPageTitle;
+					$('meta[name="og:title"]').attr("content", newPageTitle);
+					$('meta[name="twitter:title"]').attr("content", newPageTitle);
 					$("#name").text(json.name);
 					$("#release-state").text(json.releasestate);
 					$("#game-banner").attr("src", json.banner);
