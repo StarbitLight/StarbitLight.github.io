@@ -1,0 +1,104 @@
+<div class="news-list unselectable" id="posts-container"></div>
+
+<script>
+	const container = $("#posts-container");
+	
+	generatePosts();
+
+	function generatePosts() {
+		fetch('news.json').then((response) => response.json()).then((json) => {
+			for (let i = 0; i < json.posts.length; i++) {
+				const post = json.posts[i]
+				createPostElement(post.headerimg, post.title, post.intro, post.pinned, post.url, post.year, post.month, post.day)
+			}
+		});
+	}
+
+	function createPostElement(img, title, intro, pinned, posturl, dateYear, dateMonth, dateDay) {
+		const root = document.createElement("a");
+		root.classList.add("post");
+		root.href = `post?${posturl}#`;
+		root.target = "_blank";
+
+		const header = document.createElement("img");
+		header.src = img;
+		header.classList.add("unselectable");
+		root.append(header);
+
+		const titleP = document.createElement("p");
+		const titleText = document.createTextNode(title);
+		titleP.append(titleText);
+		titleP.classList.add("title");
+		root.append(titleP);
+		
+		const introP = document.createElement("p");
+		const introText = document.createTextNode(intro);
+		introP.append(introText);
+		introP.classList.add("intro");
+		root.append(introP);
+
+		const readMoreP = document.createElement("p");
+		const readModeText = document.createTextNode("Read more");
+		readMoreP.append(readModeText);
+		readMoreP.classList.add("read-more");
+		root.append(readMoreP);
+
+		const dateP = document.createElement("p");
+		const dateText = document.createTextNode(`${getMonthText(dateMonth)} ${getDayText(dateDay)} ${dateYear}`);
+		dateP.append(dateText);
+		dateP.classList.add("date");
+		root.append(dateP);
+
+
+		if (pinned) {
+			const pin = document.createElement("i");
+			pin.classList.add("fa-solid")
+			pin.classList.add("fa-thumbtack")
+			root.append(pin)
+		}
+
+		container.append(root);
+	}
+
+	function getMonthText(month) {
+		switch (month) {
+			case 1:
+				return "Jan.";
+			case 2:
+				return "Feb.";
+			case 3:
+				return "Mar.";
+			case 4:
+				return "Apr.";
+			case 5:
+				return "May";
+			case 6:
+				return "June";
+			case 7:
+				return "July";
+			case 8:
+				return "Aug.";
+			case 9:
+				return "Sep.";
+			case 10:
+				return "Oct.";
+			case 11:
+				return "Nov.";
+			case 12:
+				return "Dec.";
+		}
+	}
+
+	function getDayText(day) {
+		switch (day) {
+			case 1:
+				return "1st";
+			case 2:
+				return "2nd";
+			case 3:
+				return "3rd";
+			default:
+				return `${day}th`;
+		}
+	}
+</script>

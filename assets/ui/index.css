@@ -1,0 +1,149 @@
+header {
+	min-height: 400px;
+	height: 40vw;
+	max-height: 60vh;
+	position: relative;
+}
+
+header div.typewriter-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 65px;
+}
+
+header div.typewriter-container p#header-typewrite {
+	margin: 0 10px;
+	padding: 10px 15px;
+	background-color: #ffffff66;
+	border-radius: 10px;
+	border-top: #fff 1px solid;
+	border-bottom: #00000033 1px solid;
+	box-shadow: #00000033 0 2px 15px;
+	backdrop-filter: blur(5px);
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 900;
+}
+
+header .background {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+header .background .bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 5000ms;
+}
+
+header .background .bg.visible {
+	opacity: 1;
+}
+
+header .background #bg-1 {
+	background: url("../img/backgrounds/bg-header-yukis-universe.jpg") center / cover no-repeat;
+}
+
+header .background #bg-2 {
+	background: url("../img/backgrounds/bg-header-nls-fukoshi-seiji-in-class.jpg") center / cover no-repeat;
+}
+
+header .background #bg-3 {
+	background: url("../img/backgrounds/bg-header-nls-akai-in-class.jpg") center / cover no-repeat;
+}
+
+section {
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+section.latest-news a.all-news {
+	margin: 0 auto;
+	font-size: 1.4rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #ffffff55;
+	padding: 10px 15px;
+	border-radius: 10px;
+	box-shadow: #ffffff99 0 0 0 3px, #00000033 0 2px 15px;
+	transition: all var(--sbl-ease) var(--sbl-trans-time);
+}
+
+section.latest-news a.all-news i {
+	padding-right: 5px;
+	text-shadow: var(--sbl-purple) 1px 0px 0,
+		var(--sbl-purple) -1px 0px 0,
+		var(--sbl-purple) 0px 1px 0,
+		var(--sbl-purple) 0px -1px 0;
+}
+
+section.latest-news a.all-news:hover {
+	background-color: #ffffff77;
+	box-shadow: #ffffff 0 0 0 5px, #00000066 0 4px 15px;
+}
+
+section.games {
+	background: var(--sbl-nav);
+}
+
+section.about .team-members {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+}
+
+section.about .team-members .member img {
+	width: 100%;
+	max-width: 200px;
+}
+
+section.about .team-members .member p {
+	margin: 0 auto;
+	width: fit-content;
+	font-size: 0.8rem;
+	font-weight: 900;
+}
+
+section.about .about-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 0 10px;
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 568px) {
+	header {
+		min-height: 500px;
+		height: 40vw;
+		max-height: 60vh;
+		position: relative;
+	}
+	
+	header div.typewriter-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding-top: 100px;
+	}
+}

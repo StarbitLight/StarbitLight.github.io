@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="assets/ui/global-style.css">
+		<link rel="stylesheet" href="assets/ui/nav.css">
+		<link rel="stylesheet" href="assets/ui/footer.css">
+		<link rel="stylesheet" href="assets/ui/games/games.css">
+
+		<!-- <meta name="robots" content="all"> -->
+
+		<title>🎮 Game | Starbit Light 🌠</title>
+		<meta property="og:title" content="🎮 Game | Starbit Light 🌠">
+		<meta property="twitter:title" content="🎮 Game | Starbit Light 🌠">
+
+		<link rel="shortcut icon" href="assets/img/logos/sbl_logo_white_small.png" type="image/x-icon">
+
+		<meta name="description" content="Developed by Starbit Light 🌠">
+		<meta property="og:description" content="Developed by Starbit Light 🌠">
+		<meta property="twitter:description" content="Developed by Starbit Light 🌠">
+
+		<meta name="keywords" content="Starbit Light, Games, Steam, Game, Developers, Team">
+
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://starbitlight.com/">
+		<meta property="twitter:url" content="https://starbitlight.com/">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap" rel="stylesheet">
+
+		<script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css" />
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+
+		<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+		<!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="nav-load"></div>
+
+		<section class="game-container">
+			<div class="split">
+				<div class="container unselectable">
+					<p id="release-state">-</p>
+					<img src id="game-banner" class="unselectable">
+				</div>
+				<div class="container">
+					<p id="name"></p>
+					<div id="tags-container"></div>
+					<p id="small-description">
+						<img src id="game-banner-blurred" class="unselectable">
+					</p>
+					<iframe src color=white frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen src id="youtube-embed"></iframe>
+					<zero-md id="markdown" src>
+						<template>
+							<style>
+								img {
+									width: 100%;
+									border-radius: 10px;
+								}
+								h2 {
+									text-transform: uppercase;
+								}
+								a.cta {
+									text-decoration: none;
+									font-weight: 900;
+									font-size: 1.2rem;
+									color: #111;
+									background: linear-gradient(135deg, #d6b7ff, #ff9fbc);
+									display: flex;
+									text-align: center;
+									width: fit-content;
+									border-radius: 10px;
+									padding: 10px 15px;
+									border: #ffdbe6 3px solid;
+									transition: all cubic-bezier(0.23, 1, 0.320, 1) 200ms;
+									box-shadow: #00000049 0 2px 10px;
+								}
+								a:hover {
+									text-decoration: none;
+									color: #000;
+									background: linear-gradient(135deg, #ff9fbc, #d6b7ff);
+									border-radius: 20px;
+									border: #ff9fbc 3px solid;
+									box-shadow: #ff9fbc 0 3px 15px;
+								}
+							</style>
+						</template>
+					</zero-md>
+					<p class="title" id="screenshots-title">Screenshots</p>
+					<div id="screenshots-container" class="f-carousel"></div>
+					<p class="title">Info</p>
+					<div class="infos">
+						<div class="info">
+							<p>Release date</p>
+							<p id="release-date">TBA</p>
+						</div>
+						<div class="info">
+							<p>Players</p>
+							<p id="max-players">TBA</p>
+						</div>
+						<div class="info">
+							<p>Platforms</p>
+							<p id="platforms">TBA</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="footer-load"></div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", (event) => {
+				$("#nav-load").load("assets/ui/nav.html", function () {
+					$("#footer-load").load("assets/ui/footer.html", function () {
+						// AOS.init();
+						loadGame();
+					});
+				});
+			});
+
+			function loadGame() {
+				var urlParam = window.location.search;
+				urlParam = urlParam.replace("?", "");
+				if (urlParam == "") {
+					window.location.replace("/#");
+					return;
+				}
+				fetch(`games/${urlParam}.json`).then((response) => response.json()).then((json) => {
+					$("#name").text(json.name);
+					$("#release-state").text(json.releasestate);
+					$("#game-banner").attr("src", json.banner);
+					$("#game-banner-blurred").attr("src", json.banner);
+					var smallDescriptionText = document.createTextNode(json.smalldescription);
+					$("#small-description").append(smallDescriptionText);
+					for (let i = 0; i < json.tags.length; i++) {
+						const tag = json.tags[i];
+						var tagsContainer = $("#tags-container");
+						var newTag = document.createElement("p");
+						var newTagText = document.createTextNode(tag);
+						newTag.append(newTagText);
+						tagsContainer.append(newTag);
+					}
+					if (json.youtubeembed != "")
+						$("#youtube-embed").attr("src", `https://www.youtube.com/embed/${json.youtubeembed}?color=white&rel=0&playsinline=1`);
+					else
+						$("#youtube-embed").addClass("hidden");
+					if (json.screenshots.length == 0)
+						$("#screenshots-title").addClass("hidden")
+					else {
+						var screenshotsContainer = $("#screenshots-container");
+						for (let i = 0; i < json.screenshots.length; i++) {
+							const screenshot = json.screenshots[i];
+							var newCarouselSlide = document.createElement("div");
+							newCarouselSlide.setAttribute("data-thumb-src", screenshot);
+							newCarouselSlide.classList.add("f-carousel__slide");
+							var newImg = document.createElement("img");
+							newImg.src = screenshot;
+							newCarouselSlide.append(newImg);
+							screenshotsContainer.append(newCarouselSlide);
+						}
+						const options = {
+							Thumbs: {
+								type: "modern",
+							},
+							infinite: true,
+						};
+						const container = document.getElementById("screenshots-container");
+						new Carousel(container, options, { Thumbs });
+					}
+					if (json.releaseyear != 0)
+						$("#release-date").text(`${getMonthText(json.releasemonth)} ${getDayText(json.releaseday)} ${json.releaseyear}`);
+					if (json.maxplayers != 0)
+						$("#max-players").text(json.maxplayers);
+					if (json.platforms != "")
+						$("#platforms").text(json.platforms);
+					$("#markdown").attr("src", `games/${urlParam}.md`);
+				});
+			}
+
+			function getMonthText(month) {
+				switch (month) {
+					case 1:
+						return "Jan.";
+					case 2:
+						return "Feb.";
+					case 3:
+						return "Mar.";
+					case 4:
+						return "Apr.";
+					case 5:
+						return "May";
+					case 6:
+						return "June";
+					case 7:
+						return "July";
+					case 8:
+						return "Aug.";
+					case 9:
+						return "Sep.";
+					case 10:
+						return "Oct.";
+					case 11:
+						return "Nov.";
+					case 12:
+						return "Dec.";
+				}
+			}
+
+			function getDayText(day) {
+				switch (day) {
+					case 1:
+						return "1st";
+					case 2:
+						return "2nd";
+					case 3:
+						return "3rd";
+					default:
+						return `${day}th`;
+				}
+			}
+		</script>
+	</body>
+</html>
