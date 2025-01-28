@@ -22,6 +22,8 @@
 		const header = document.createElement("img");
 		header.src = img;
 		header.classList.add("unselectable");
+		header.classList.add("notranslate");
+		header.setAttribute("translate", "no");
 		root.append(header);
 
 		const titleP = document.createElement("p");
