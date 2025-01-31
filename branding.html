@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="assets/ui/global-style.css">
+		<link rel="stylesheet" href="assets/ui/nav.css">
+		<link rel="stylesheet" href="assets/ui/footer.css">
+		<link rel="stylesheet" href="assets/ui/branding.css">
+
+		<!-- <meta name="robots" content="all"> -->
+
+		<title class="notranslate" translate="no">Branding | Starbit Light 🌠</title>
+		<meta property="og:title" content="Branding | Starbit Light 🌠">
+		<meta property="twitter:title" content="Branding | Starbit Light 🌠">
+
+		<link rel="shortcut icon" href="assets/img/logos/sbl_logo_white_small.png" type="image/x-icon">
+
+		<meta name="description" content="Starbit Light branding guidelines 🌠">
+		<meta property="og:description" content="Starbit Light branding guidelines 🌠">
+		<meta property="twitter:description" content="Starbit Light branding guidelines 🌠">
+
+		<meta name="keywords" content="Starbit Light, Games, Steam, Game, Developers, Team">
+
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://starbitlight.com/branding">
+		<meta property="twitter:url" content="https://starbitlight.com/branding">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap" rel="stylesheet">
+
+		<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+		<!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="nav-load"></div>
+
+		<header class="branding-header">
+			<h1>Branding Guidelines</h1>
+		</header>
+
+		<div class="branding-content">
+			<p style="font-size: 1.2rem; font-weight: 600;">
+				Please don't edit, change, distort, rotate or recolor our logos. Don't use any other font, and respect the capitalization.
+			</p>
+			<div class="split">
+				<div class="split-content outline">
+					<h2>Logo</h2>
+					<div class="assets">
+						<div class="img bg-colorful">
+							<img src="assets/img/logos/sbl_logo_white.png" alt="Starbit Light white logo" class="unselectable">
+							<p>White star logo</p>
+							<a href="assets/img/logos/sbl_logo_white.png" download="StarbitLight_logo_white" target="_blank">PNG (1024x1024px)</a>
+							<!-- <a href="#" download="StarbitLight_logo_white" target="_blank">SVG</a> -->
+						</div>
+					</div>
+				</div>
+				<div class="split-content outline">
+					<h2>Font</h2>
+					<div class="assets">
+						<div class="font bg-sbl">
+							<p style="font-size: 1.8rem; font-weight: 700;">Starbit Light</p>
+							<p>Font used in the logo</p>
+							<p>Quicksand (Bold - 700)</p>
+							<a href="https://fonts.google.com/specimen/Quicksand" target="_blank" style="color: #fcc0d2;">Google Fonts</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="outline">
+				<h2>Colors</h2>
+				<div class="assets">
+					<div class="color" style="background: var(--sbl-purple); color: #fff;">
+						<p>Purple</p>
+						<p>#692F93</p>
+					</div>
+					<div class="color" style="background: var(--sbl-pink); color: #fff;">
+						<p>Pink</p>
+						<p>#F475AA</p>
+					</div>
+					<div class="color full-width bg-sbl">
+						<p>Gradient</p>
+						<p>Purple to Pink</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer-load"></div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", (event) => {
+				$("#nav-load").load("assets/ui/nav.html", function () {
+					$("#footer-load").load("assets/ui/footer.html", function () {
+						// AOS.init();
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

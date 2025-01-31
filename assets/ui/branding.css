@@ -1,0 +1,141 @@
+header.branding-header {
+	padding-top: 100px;
+	padding-bottom: 25px;
+	text-align: center;
+	background: var(--sbl-background);
+	font-size: 1.2rem;
+}
+
+header.branding-header h1 {
+	padding: 0 10px;
+}
+
+div.branding-content {
+	max-width: 900px;
+	width: 100%;
+	padding: 50px 15px;
+	margin: 0 auto;
+}
+
+div.branding-content h2 {
+	font-size: 2rem;
+	padding-bottom: 10px;
+}
+
+div.branding-content p.description {
+	padding-bottom: 20px;
+}
+
+div.branding-content div.split {
+	display: flex;
+	gap: 40px;
+	width: 100%;
+	padding: 40px 0;
+}
+
+div.branding-content div.split div.split-content {
+	width: calc(50% - 7.5px);
+}
+
+div.branding-content div.outline {
+	box-shadow: #00000044 0 3px 10px;
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 15px 20px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.assets {
+	padding-top: 3px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	width: 100%;
+}
+
+div.assets div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 10px;
+	background-color: #eee;
+	box-shadow: inset #00000033 0 2px 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 25px;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+div.branding-content div.split div.split-content div.assets div {
+	min-height: 210px;
+}
+
+div.assets div.bg-colorful {
+	background: var(--sbl-background);
+}
+
+div.assets div.bg-sbl {
+	background: var(--sbl-nav);
+	color: #fff;
+}
+
+
+div.assets div.img img {
+	width: 100%;
+	height: 100px;
+	object-fit: contain;
+}
+
+div.assets div.color {
+	width: calc(50% - 10px);
+	min-height: 175px;
+}
+
+div.assets div.color.full-width {
+	width: 100%;
+}
+
+div.assets div.color p:first-child {
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+div.assets div.color p:last-child {
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-top: -15px;
+}
+
+@media only screen and (max-width: 600px) {
+	div.branding-content div.split {
+		display: flex;
+		gap: 40px;
+		width: 100%;
+		padding: 40px 0;
+		flex-direction: column;
+	}
+	
+	div.branding-content div.split div.split-content {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 568px) {
+	header.branding-header {
+		padding-top: 150px;
+	}
+}
+
+@media only screen and (max-width: 525px) {
+	div.assets div.color {
+		width: 100%;
+		min-height: unset;
+		padding-bottom: 30px;
+	}
+}
