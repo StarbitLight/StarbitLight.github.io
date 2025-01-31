@@ -95,21 +95,75 @@ div.assets div.img img {
 div.assets div.color {
 	width: calc(50% - 10px);
 	min-height: 175px;
+	position: relative;
+	cursor: pointer;
+	transition: padding-bottom var(--sbl-ease) var(--sbl-trans-time);
 }
 
 div.assets div.color.full-width {
+	cursor: default;
 	width: 100%;
+	pointer-events: none;
 }
 
-div.assets div.color p:first-child {
+div.assets div.color p:nth-child(1) {
 	font-size: 2rem;
 	font-weight: 900;
 }
 
-div.assets div.color p:last-child {
+div.assets div.color p:nth-child(2) {
 	font-size: 1.2rem;
 	font-weight: 500;
 	margin-top: -15px;
+}
+
+
+
+div.assets div.color button.copy {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: none;
+	background: linear-gradient(transparent, #00000055);
+	height: 30px;
+	color: #fff;
+	opacity: 0.5;
+	font-size: 0.8rem;
+	font-weight: 600;
+	transition: all var(--sbl-ease) var(--sbl-trans-time);
+}
+
+div.assets div.color button.copy i {
+	padding-left: 5px;
+}
+
+div.assets div.color div.copied {
+	position: absolute;
+	bottom: 7px;
+	left: 7px;
+	right: 7px;
+	width: unset;
+	height: unset;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #ffffff;
+	box-shadow: none;
+	color: #111;
+	transform: translateY(125%);
+	transition: transform var(--sbl-ease) 350ms;
+}
+
+div.assets div.color div.copied p, div.assets div.color div.copied i {
+	font-size: 1.2rem;
+}
+
+div.assets div.color div.copied i {
+	padding-left: 5px;
+}
+
+div.assets div.color div.copied.visible {
+	transform: translateY(0);
 }
 
 @media only screen and (max-width: 600px) {
@@ -120,7 +174,7 @@ div.assets div.color p:last-child {
 		padding: 40px 0;
 		flex-direction: column;
 	}
-	
+
 	div.branding-content div.split div.split-content {
 		width: 100%;
 	}
@@ -137,5 +191,17 @@ div.assets div.color p:last-child {
 		width: 100%;
 		min-height: unset;
 		padding-bottom: 30px;
+	}
+}
+
+@media only screen and (min-width: 525px) {
+	div.assets div.color:hover {
+		padding-bottom: 55px;
+	}
+
+	div.assets div.color:hover button.copy {
+		opacity: 1;
+		height: 50px;
+		font-size: 1rem;
 	}
 }

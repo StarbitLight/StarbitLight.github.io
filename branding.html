@@ -77,14 +77,34 @@
 			</div>
 			<div class="outline">
 				<h2>Colors</h2>
-				<div class="assets">
-					<div class="color" style="background: var(--sbl-purple); color: #fff;">
+				<div class="assets unselectable">
+					<div class="color" style="background: var(--sbl-purple); color: #fff;" onclick="copyColor('692F93', this)">
 						<p>Purple</p>
 						<p>#692F93</p>
+						<button class="copy">
+							Click to copy color
+							<i class="fa-solid fa-eye-dropper"></i>
+						</button>
+						<div class="copied">
+							<p>
+								Copied!
+								<i class="fa-solid fa-check"></i>
+							</p>
+						</div>
 					</div>
-					<div class="color" style="background: var(--sbl-pink); color: #fff;">
+					<div class="color" style="background: var(--sbl-pink); color: #fff;" onclick="copyColor('F475AA', this)">
 						<p>Pink</p>
 						<p>#F475AA</p>
+						<button class="copy">
+							Click to copy color
+							<i class="fa-solid fa-eye-dropper"></i>
+						</button>
+						<div class="copied">
+							<p>
+								Copied!
+								<i class="fa-solid fa-check"></i>
+							</p>
+						</div>
 					</div>
 					<div class="color full-width bg-sbl">
 						<p>Gradient</p>
@@ -104,6 +124,17 @@
 					});
 				});
 			});
+
+			function copyColor(colorTag, button) {
+				navigator.clipboard.writeText(colorTag);
+				var copied = button.querySelector(".copied");
+				if (!copied.classList.contains("visible")) {
+					copied.classList.add("visible");
+					setTimeout(() => {
+						copied.classList.remove("visible");					
+					}, 1500);
+				}
+			}
 		</script>
 	</body>
 </html>
