@@ -1,0 +1,126 @@
+header.faq-header {
+	padding-top: 100px;
+	padding-bottom: 25px;
+	text-align: center;
+	background: var(--sbl-background);
+	font-size: 1.2rem;
+}
+
+div.faq-tags {
+	position: sticky;
+	top: 60px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 30px 15px;
+	z-index: 1;
+}
+
+div.faq-tags button.faq-tag {
+	border: none;
+	background: var(--sbl-pink);
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-weight: 600;
+	box-shadow: #00000066 0 2px 10px;
+	transition: all var(--sbl-ease) var(--sbl-trans-time);
+}
+
+div.faq-tags button.faq-tag.selected {
+	box-shadow: #00000066 0 2px 10px, inset var(--sbl-pink) 0 0 0 2px;
+	background: var(--sbl-background);
+	color: #111;
+}
+
+div#faq-content {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-bottom: 50px;
+}
+
+div#faq-content div.question {
+	background: var(--sbl-background);
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+div#faq-content div.question p:nth-child(1) {
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: 12px 45px 12px 15px;
+	position: relative;
+}
+
+div#faq-content div.question p:nth-child(1)::after {
+	content: '+';
+	font-size: 2rem;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+}
+
+div#faq-content div.question.opened p:nth-child(1)::after {
+	content: '-';
+	transform: translate(-2px, calc(-50% - 1px)) scaleX(1.6);
+}
+
+div#faq-content div.question p:nth-child(2) {
+	padding: 0 15px;
+	background-color: #fff;
+	max-height: 0;
+	transition: all var(--sbl-ease) var(--sbl-trans-time);
+}
+
+div#faq-content div.question.opened p:nth-child(2) {
+	padding: 12px 15px;
+	max-height: 500px;
+}
+
+div#faq-content div.question a {
+	display: block;
+	text-align: center;
+	padding: 0 15px;
+	max-height: 0;
+	background-color: var(--sbl-pink);
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 900;
+	text-decoration: none;
+	transition: all var(--sbl-ease) var(--sbl-trans-time);
+}
+
+div#faq-content div.question.opened a {
+	padding: 12px 15px;
+	max-height: 200px;
+}
+
+div#faq-content.nightlight-secrets div.question:not([id=nightlight-secrets]) {
+	display: none;
+}
+
+div#faq-content.extra-beat div.question:not([id=extra-beat]) {
+	display: none;
+}
+
+div#faq-content div.question#global {
+	display: block;
+}
+
+@media only screen and (max-width: 568px) {
+	header.faq-header {
+		padding-top: 150px;
+	}
+
+	div.faq-tags {
+		top: 110px;
+	}
+}

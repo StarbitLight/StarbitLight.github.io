@@ -1,0 +1,82 @@
+{
+	"questions": [
+		{
+			"question": "When does the next update releases? When does this game publicly releases?",
+			"answer": "We are very sorry, but it is impossible to answer. We are a small team working on our fre time, so we can't provide you with a precise release date. We encourage you to follow us on our socials to be informed of an upcoming release date, or to get exclusive sneak peeks on what's coming next!",
+			"link": [],
+			"tag": "global"
+		},
+		{
+			"question": "Can I use this game's soundtrack in my projects?",
+			"answer": "We recommend you to take a look at the following page:",
+			"link": [
+				"Terms of use for the music",
+				"terms-of-use#music"
+			],
+			"tag": "global"
+		},
+		{
+			"question": "Can I mod your game?",
+			"answer": "We recommend you to take a look at the following page:",
+			"link": [
+				"Modding policies",
+				"modding"
+			],
+			"tag": "global"
+		},
+		{
+			"question": "I think I found a bug!",
+			"answer": "We are very sorry you had a bug while playing our game- 😱 We encourage you to contact us to report the bug. The easiest way to reach us out is from our Discord server where you can open a bug report ticket and will be in touch with the developers directly. You can click the link below to join our Discord server!",
+			"link": [
+				"Discord",
+				"https://discord.com/invite/KpH2Rt6"
+			],
+			"tag": "global"
+		},
+		{
+			"question": "Does the game contains ads?",
+			"answer": "Most mobile game developers implement advertisements in their free mobile games. This is parcially the case in our game: You can head to the game's settings if you want to enable or disable the ads in the game. Ads is a great way to support our work while keeping the game free. They are completely optional though, and can be disabled to play without any interuption.",
+			"link": [],
+			"tag": "extra-beat"
+		},
+		{
+			"question": "Where can I listen to the game's soundtrack?",
+			"answer": "All of our soundtrack is available on streaming platforms like Apple Music, Spotify, YouTube Music, Amazon Music... and much more! 🎵",
+			"link": [],
+			"tag": "global"
+		},
+		{
+			"question": "Will there be a free demo of this game?",
+			"answer": "We believe that a free demo can be a great way to make players test the game before purchasing the full game. If a demo isn't available yet, it might be available later, don't worry!",
+			"link": [],
+			"tag": "nightlight-secrets"
+		},
+		{
+			"question": "Will Nightlight Secrets be ported to mobile?",
+			"answer": "Nightlight Secrets will not be ported to mobile since the game would not run well because of the way it was designed and its intensive graphics. However, we hope to extend the game's compatibility to many other platforms in the future!",
+			"link": [],
+			"tag": "nightlight-secrets"
+		},
+		{
+			"question": "Will Extra Beat have beatmaps from artists other than Raphael Neko?",
+			"answer": "It is currently too early to answer that question. We currently avoid adding beatmaps from any other artists than Raphael Neko and the soundtrack of our other games to avoid any copyright issue.",
+			"link": [],
+			"tag": "extra-beat"
+		},
+		{
+			"question": "Do you plan to add more translations in this game?",
+			"answer": "More translations will be added over the time in free updates.",
+			"link": [],
+			"tag": "global"
+		},
+		{
+			"question": "Does the game collects any of my data?",
+			"answer": "In short: no. You can read more about our privacy policy by clicking the following link:",
+			"link": [
+				"Privacy Policy",
+				"privacy-policy"
+			],
+			"tag": "global"
+		}
+	]
+}
