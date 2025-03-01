@@ -53,15 +53,15 @@ div#faq-content div.question {
 }
 
 div#faq-content div.question p:nth-child(1) {
-	font-size: 1.2rem;
-	font-weight: 600;
+	/* font-size: 1.2rem; */
+	font-weight: 500;
 	padding: 12px 45px 12px 15px;
 	position: relative;
 }
 
 div#faq-content div.question p:nth-child(1)::after {
 	content: '+';
-	font-size: 2rem;
+	font-size: 1rem;
 	position: absolute;
 	top: 50%;
 	right: 15px;
@@ -78,6 +78,7 @@ div#faq-content div.question p:nth-child(2) {
 	background-color: #fff;
 	max-height: 0;
 	transition: all var(--sbl-ease) var(--sbl-trans-time);
+	font-size: 0.9rem;
 }
 
 div#faq-content div.question.opened p:nth-child(2) {
@@ -92,8 +93,8 @@ div#faq-content div.question a {
 	max-height: 0;
 	background-color: var(--sbl-pink);
 	color: #fff;
-	font-size: 1.3rem;
-	font-weight: 900;
+	font-size: 1rem;
+	font-weight: 700;
 	text-decoration: none;
 	transition: all var(--sbl-ease) var(--sbl-trans-time);
 }

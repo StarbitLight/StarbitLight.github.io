@@ -54,6 +54,7 @@ footer .content .copyright {
 	gap: 5px;
 	font-size: 0.8rem;
 	opacity: 0.6;
+	font-weight: 100;
 }
 
 footer .content .copyright p {

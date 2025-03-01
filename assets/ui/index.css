@@ -27,8 +27,7 @@ header div.typewriter-container p#header-typewrite {
 	box-shadow: #00000033 0 2px 15px;
 	backdrop-filter: blur(5px);
 	text-align: center;
-	font-size: 2.5rem;
-	font-weight: 900;
+	font-size: 2rem;
 }
 
 header .background {
@@ -84,10 +83,6 @@ section.latest-news a.all-news {
 
 section.latest-news a.all-news i {
 	padding-right: 5px;
-	text-shadow: var(--sbl-purple) 1px 0px 0,
-		var(--sbl-purple) -1px 0px 0,
-		var(--sbl-purple) 0px 1px 0,
-		var(--sbl-purple) 0px -1px 0;
 }
 
 section.latest-news a.all-news:hover {
@@ -114,7 +109,7 @@ section.about .team-members .member p {
 	margin: 0 auto;
 	width: fit-content;
 	font-size: 0.8rem;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 section.about .about-container {

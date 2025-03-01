@@ -34,7 +34,8 @@ div.news-list a.post img {
 }
 
 div.news-list a.post p.title {
-	font-weight: 900;
+	font-size: 1.1rem;
+	font-weight: 700;
 	min-height: 40px;
 	display: flex;
 	align-items: center;
@@ -42,7 +43,7 @@ div.news-list a.post p.title {
 
 div.news-list a.post p.intro {
 	font-size: 0.8rem;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 div.news-list a.post p.read-more {
@@ -65,7 +66,7 @@ div.news-list p.date {
 	background: var(--sbl-background);
 	font-size: 0.7rem;
 	font-weight: 600;
-	padding: 3px 6px;
+	padding: 3px 8px;
 	border-radius: 20px;
 	box-shadow: #00000055 0 2px 10px;
 }

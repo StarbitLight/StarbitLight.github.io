@@ -1,6 +1,16 @@
 {
 	"posts": [
 		{
+			"url": "updates-march-2025",
+			"pinned": false,
+			"year": 2025,
+			"month": 3,
+			"day": 1,
+			"title": "Starbit Light 2.0 + some updates!",
+			"intro": "After 5 years of using the same logo, Starbit Light is going into a visual refresh! Along side this change, we have a few updates!",
+			"headerimg": "posts/updates-march-2025-img/thumbnail.jpg"
+		},
+		{
 			"url": "sfh-rebranding",
 			"pinned": false,
 			"year": 2025,

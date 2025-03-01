@@ -15,6 +15,9 @@ div.branding-content {
 	width: 100%;
 	padding: 50px 15px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 
 div.branding-content h2 {
@@ -23,18 +26,8 @@ div.branding-content h2 {
 }
 
 div.branding-content p.description {
-	padding-bottom: 20px;
-}
-
-div.branding-content div.split {
-	display: flex;
-	gap: 40px;
-	width: 100%;
-	padding: 40px 0;
-}
-
-div.branding-content div.split div.split-content {
-	width: calc(50% - 7.5px);
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 
 div.branding-content div.outline {
@@ -72,17 +65,17 @@ div.assets div {
 	font-size: 0.8rem;
 }
 
-div.branding-content div.split div.split-content div.assets div {
-	min-height: 210px;
-}
-
 div.assets div.bg-colorful {
-	background: var(--sbl-background);
+	background-color: #fff;
 }
 
 div.assets div.bg-sbl {
 	background: var(--sbl-nav);
 	color: #fff;
+}
+
+div.assets div.img {
+	width: calc(50% - 20px);
 }
 
 
@@ -154,7 +147,8 @@ div.assets div.color div.copied {
 	transition: transform var(--sbl-ease) 350ms;
 }
 
-div.assets div.color div.copied p, div.assets div.color div.copied i {
+div.assets div.color div.copied p,
+div.assets div.color div.copied i {
 	font-size: 1.2rem;
 }
 
@@ -166,20 +160,6 @@ div.assets div.color div.copied.visible {
 	transform: translateY(0);
 }
 
-@media only screen and (max-width: 600px) {
-	div.branding-content div.split {
-		display: flex;
-		gap: 40px;
-		width: 100%;
-		padding: 40px 0;
-		flex-direction: column;
-	}
-
-	div.branding-content div.split div.split-content {
-		width: 100%;
-	}
-}
-
 @media only screen and (max-width: 568px) {
 	header.branding-header {
 		padding-top: 150px;
@@ -187,6 +167,10 @@ div.assets div.color div.copied.visible {
 }
 
 @media only screen and (max-width: 525px) {
+	div.assets div.img {
+		width: 100%;
+	}
+
 	div.assets div.color {
 		width: 100%;
 		min-height: unset;
