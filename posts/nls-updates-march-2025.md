@@ -1,4 +1,4 @@
-# ⚠️ This post contains spoilers about the story mode! If you don't want to get spoil and discover the final game by yourself, please don't read what's below!!
+# ⚠️ This post contains spoilers about the story mode! If you don't want to get spoiled and discover the final game by yourself, please don't read what's below!!
 
 ![img](../posts/spoiler-alert.jpg)
 
