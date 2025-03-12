@@ -30,13 +30,13 @@ We watched YouTubers playing the currently available Act 1 from the Early Access
 
 <br>
 
-⚠️ *Please note that some of the footages and previews that you might see below were recorded from the previous Unity version. If that the case, it will be mentioned below the footage. Remember that things are not final and might be different in the final Godot version of the game!*
+⚠️ *Please note that some of the footages and previews that you might see below were recorded from the previous Unity version that was entirely made in collaboration with TwistedSphere using the Harmless Lies engine. If that the case, it will be mentioned below the footage. Remember that things are not final and might be different in the final Godot version of the game!*
 
 <br>
 
 ### 1. A visual refresh for the characters
 
-The character base has been changed, thanks to the help of TwistedSphere who gave us a similar base from their own game. With this change, we have even more ways to make characters being different from each other, and overall characters looks more mature, stylized, and stands out from the previous base model that was over-used in too many other games.
+The character base has been changed, thanks to the help of TwistedSphere who provided us with a similar base from their own game, and even more great work to improve the existing characters with new textures and new outfits. With all these changes, we have even more ways to make characters being different from each other, and overall characters looks more mature, stylized, and stands out from the previous base model that was over-used in too many other games.
 
 ![img](../posts/nls-updates-march-2025-img/characters.jpg)
 
@@ -55,8 +55,8 @@ In case you forgot how it was, here it is:
 
 *(recorded from the early access version on Steam. Some parts were accelerated by 400% as they were too long.)*
 
-This dream feels out of place in the game's story, so instead we went for something that actually gives even more hints and details about Akai's past and childhood memories.\
-Take a look at the new dream sequence:
+This dream feels out of place in the game's story, so instead, TwistedSphere came with a much better idea, something that actually gives even more hints and details about Akai's past and childhood memories. They created brand new animations and a completely different environment.\
+Take a look at the new dream sequence they made:
 
 <video controls controlslist="nodownload" playsinline oncontextmenu="return false;">
 	<source src="../posts/nls-updates-march-2025-img/NLSDreamSequence.mp4" type="video/mp4"/>
@@ -74,7 +74,7 @@ Future dream sequences in other acts will follow this pattern where Akai sees he
 ### 3. Updated voice lines and animations
 
 For some reason, people really disliked Emiko's voice lines- So our amazing and talented voice actress, GeekyVoiceActs, re-recorded brand new voice lines for Emiko that matches even better the cutscene!\
-In addition to this update, characters are now much more expressive and animated, which makes the dialogue even more dynamic.
+In addition to this update, TwistedSphere helped us making the characters much more expressive by providing new animations, which makes the dialogue even more dynamic. They also helped us a lot improving some existing cutscenes and dialogues. Here is one of them:
 
 <video controls controlslist="nodownload" playsinline oncontextmenu="return false;">
 	<source src="../posts/nls-updates-march-2025-img/NLSAct1EmikoDialogue.mp4" type="video/mp4"/>
@@ -172,6 +172,29 @@ In addition to that, more audio and gameplay settings has been added to ensure a
 
 People really loved how the Early Access version had fully animated and voice acted cutscenes, and we really loved to work on them too. But unfortunately, due to a very limited budget, you might see a small difference with next acts with less voice acting. To compromise this downgrade, we will do our best to make the cutscenes as polished as possible with some animations, some parts of some existing voice lines that we already have, and an overall good sound design. You probably already noticed it through the footages shown above about the Act 1 revamp by the way.\
 We are sorry for this change and we really hope that you will still enjoy the game's story anyway!
+
+<br>
+<br>
+
+## Special thanks 💖
+
+We would like to also express our gratitude to a few people who really helped us through these years to make the project come together:
+
+- **TwistedSphere**\
+	They really helped us pushing the game to a whole another level, not only by remaking and improving all that was done before in their own engine, but also by being there with us since a couple of years. Without them, the game wouldn't be as good as it is right now.\
+	If you love Nightlight Secrets, you should definitely consider checking out their own game, <a href="https://store.steampowered.com/app/3005250/Harmless_Lies/" target="_blank">Harmless Lies</a>.
+
+- **Jake**\
+	Despite not being around in the project anymore, Jake helped us from the very old PTB 2 to a few years after the early access version released. Over the years, Jake helped us a lot with some amazing code base upgrade and optimization, and with coming up with some new ideas for a few acts that comes after the first one.
+
+- **GeekyVoiceActs**\
+	A true shining star that always brings joy around everywhere she goes! Not only she has been giving her voice to Emiko since the early access version of the game, but she also never lost her faith into our game. You should definitely check out <a href="https://www.youtube.com/@geekyvoiceacts" target="_blank">her YouTube channel</a> where she does tons of great videos with Princess Peach, Daisy and Rosalina from the Super Mario universe!
+
+- **Our amazing voice actors**\
+	A special thanks to **Kirsten Candelore "Jinkles"**, **Roberto Benavides "TheBurningFaith"**, and **Valentine Rivera "BodegaBelmont"**, who made some of our characters come alive by providing their incredible voices for the game!
+
+- **Our players and our community**\
+	Especially thanks to you for enjoying what we do and for all the support!
 
 <br>
 <br>
